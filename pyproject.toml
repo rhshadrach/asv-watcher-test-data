@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools", "setuptools-scm"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "asv_watcher_test_data"
+authors = [
+    {name = "Richard Shadrach", email = "rhshadrach@gmail.com"},
+]
+description = "ASV Performance Regression Detection Test Data"
+readme = "README.md"
+requires-python = ">=3.7"
+keywords = ["ASV", "Performance", "Regression", "Test"]
+license = {text = "BSD-3-Clause"}
+classifiers = [
+    "Programming Language :: Python :: 3",
+]
+dependencies = []
+version = "0.0.1"
+
+[tool.setuptools]
+packages = ["asv_watcher_test_data"]
+include-package-data = true
+
+[tool.setuptools.package-data]
+stage = ["STAGE"]
